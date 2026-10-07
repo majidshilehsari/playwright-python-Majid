@@ -46,6 +46,19 @@ async def main():
 asyncio.run(main())
 ```
 
+## Optional in-page automation studio
+
+This fork also includes an optional, Colab-friendly workflow builder that opens as a right-hand panel inside a Playwright-controlled page. It can pick elements, add and run click/type/form/wait/scroll/navigation/screenshot steps, and export workflows to JSON or Python.
+
+```py
+from playwright.automation_studio import AutomationStudio
+
+# Sync API: studio = AutomationStudio(page).start()
+# Async API: studio = AutomationStudio(page); await studio.start()
+```
+
+See the [Automation Studio guide](examples/automation_studio/README.md) for setup and details.
+
 ## Other languages
 
 More comfortable in another programming language? [Playwright](https://playwright.dev) is also available in
