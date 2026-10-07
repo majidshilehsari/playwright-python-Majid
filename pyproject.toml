@@ -52,6 +52,9 @@ packages = [
 ]
 include-package-data = true
 
+[tool.setuptools.package-data]
+playwright = ["_impl/_automation_studio.js"]
+
 [tool.setuptools_scm]
 version_file = "playwright/_repo_version.py"
 
